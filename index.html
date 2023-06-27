@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Recipe Search</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- Linking an external CSS file -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Recipe Search</h1>
+      <!-- Heading for the title of the page -->
+    </header>
+    <main>
+      <div class="form-container">
+        <label for="ingredients">Ingredients:</label>
+        <!-- Label for the input field to specify ingredients -->
+        <input
+          type="text"
+          id="ingredients"
+          placeholder="Enter ingredients (Separate ingredients with spaces)"
+        />
+        <!-- Input field to enter ingredients -->
+        <label for="exclusions">Exclusions:</label>
+        <!-- Label for the input field to specify exclusions -->
+        <input
+          type="text"
+          id="exclusions"
+          placeholder="Enter exclusions (Separate exclusions with spaces)"
+        />
+        <!-- Input field to enter exclusions -->
+        <label for="calories">Max Calories:</label>
+        <!-- Label for the input field to specify maximum calories -->
+        <input type="number" id="calories" placeholder="Enter max calories" />
+        <!-- Input field to enter maximum calories -->
+        <button id="submit">Search</button>
+        <!-- Button to trigger the search action -->
+      </div>
+      <div id="result-container">
+        <pre id="result"></pre>
+
+        <div id="result-group1">
+          <div id="title1"></div>
+          <div id="img1">
+            <img id="image1" src="" />
+          </div>
+          <div id="description1"></div>
+          <div id="ingredients1"></div>
+          <div id="steps1"></div>
+        </div>
+
+        <div id="result-group2">
+          <div id="title2"></div>
+          <div id="img2">
+            <img id="image2" src="" />
+          </div>
+          <div id="description2"></div>
+          <div id="ingredients2"></div>
+          <div id="steps2"></div>
+        </div>
+
+        <div id="result-group3">
+          <div id="title3"></div>
+          <div id="img3">
+            <img id="image3" src="" />
+          </div>
+          <div id="description3"></div>
+          <div id="ingredients3"></div>
+          <div id="steps3"></div>
+        </div>
+        <!-- Container to display the search results -->
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
